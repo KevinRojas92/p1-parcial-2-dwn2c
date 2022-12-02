@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h2 {
+    width: 100%;
+    height: 70px;
+    text-transform: uppercase;
+    color: orangered;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 18px;
+    background-color: orange;
+}
+
+.contenedor {
+    width: 400px;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-between;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.contenedor img {
+    width: 80%;
+    border-radius: 30px;
+    margin-top: 30px;
+    align-self: center;
+}
+
+.contenedor h3 {
+    text-align: left;
+    padding: 30px;
+    text-transform: uppercase;
+    color: orangered;
+    letter-spacing: 5px;
+}
+
+.contenedor p {
+    padding: 0 30px 15px 30px;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.contenedor div p:nth-child(3) {
+    font-weight: bold;
+    color: blue;
+}
+
+.contenedor div :nth-child(4) {
+    margin-bottom: 30px;
+    color: gainsboro;
+}
+
+.contenedor button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.contenedor_general {
+    width: 96%;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 5%;
+    row-gap: 50px;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+
+#minicarrito {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: fixed;
+    left: calc(50% - 40%);
+    bottom: 90px;
+    background-color: brown;
+}
+
+#minicarrito p {
+    padding: 0 40px;
+    color: orange;
+}
+
+#hamburguesa, #perros, #salchipapa {
+    padding: 0 15px;
+}
+
+#minicarrito button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;;
+    background-color: red;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+footer li {
+    padding: 0 100px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#cont_modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    width: 50vw;
+    background-color: white;
+    border-radius: 30px;
+    padding-bottom: 35px;
+}
+
+#header_modal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;
+    border-radius: 30px 30px 0 0;
+}
+
+#header_modal h2 {
+    width: 600px;
+    height: 70px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 18px;
+    margin-left: 8%;
+    background-color: transparent;
+}
+
+#header_modal a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-right: 50px;
+    color: black;
+}
+
+#contenido_modal {
+    width: calc(100% - 16%);
+    margin: auto;
+    padding: 15px 0;
+}
+
+#contenido_modal div {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.linea {
+    border-bottom: 1px solid orange;
+}
+
+#contenido_modal div p {
+    padding-right: 50px;
+}
+
+#contenido_modal div p:nth-child(2) {
+    width: 530px;
+}
+
+#contenido_modal div a {
+    display: inline-block;
+    color: orangered;
+}
+
+.display_none {
+    display: none !important;
+}
